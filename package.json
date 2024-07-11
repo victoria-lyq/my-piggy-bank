@@ -9,13 +9,55 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@babel/runtime": "^7.24.7",
+    "@babel/types": "^7.24.7",
+    "@expo/metro-runtime": "~3.2.1",
+    "@react-navigation/native": "^6.0.2",
+    "@types/react": "~18.2.79",
+    "babel-preset-expo": "^11.0.12",
+    "debug": "^4.3.5",
     "expo": "~51.0.19",
     "expo-status-bar": "~1.12.1",
+    "native-base": "^3.4.28",
+    "normalize-css-color": "^1.0.2",
     "react": "18.2.0",
-    "react-native": "0.74.3"
+    "react-dom": "18.2.0",
+    "react-native": "0.74.3",
+    "react-native-gifted-charts": "^1.4.16",
+    "react-native-linear-gradient": "^2.8.3",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-svg": "12.1.1",
+    "react-native-web": "~0.19.10",
+    "resolve-from": "^5.0.0",
+    "stack": "^0.1.0",
+    "typescript": "~5.3.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@babel/runtime": "^7.24.7",
+    "@react-native-community/cli-server-api": "^13.6.9",
+    "@react-native/assets-registry": "^0.74.85",
+    "expo-asset": "^10.0.10",
+    "metro": "^0.80.9",
+    "metro-cache": "^0.80.9",
+    "metro-cache-key": "^0.80.9",
+    "metro-config": "^0.80.9",
+    "metro-core": "^0.80.9",
+    "metro-minify-terser": "^0.80.9",
+    "metro-resolver": "^0.80.9",
+    "metro-runtime": "^0.80.9",
+    "metro-source-map": "^0.80.9",
+    "metro-transform-plugins": "^0.80.9",
+    "metro-transform-worker": "^0.80.9"
   },
-  "private": true
+  "private": true,
+  "packageManager": "yarn@4.3.1",
+  "dependenciesMeta": {
+    "@babel/runtime@7.24.7": {
+      "unplugged": true
+    },
+    "metro-runtime@0.80.9": {
+      "unplugged": true
+    }
+  }
 }
