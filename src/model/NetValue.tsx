@@ -1,4 +1,6 @@
+import { DateTime } from 'luxon';
+
 export interface NetValue {
-    value: number
-    date: Date
+    value: number;
+    date: DateTime;
 }
