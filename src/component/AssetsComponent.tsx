@@ -9,7 +9,7 @@ export function AssetComponent(asset: Asset) {
             rounded="sm"
             key={asset.name}
             borderBottomWidth={0.5}
-            borderBottomColor={'gray.200'}
+            borderBottomColor={'blueGray.200'}
         >
             <HStack
                 w="full"
@@ -20,7 +20,7 @@ export function AssetComponent(asset: Asset) {
                 <Text fontSize="14" fontWeight="bold" color="indigo.600">
                     {asset.name}
                 </Text>
-                <Text fontSize="14" color="gray.500">
+                <Text fontSize="14" color="blueGray.500">
                     {asset.value}
                 </Text>
             </HStack>

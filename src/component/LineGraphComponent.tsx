@@ -1,84 +1,94 @@
-import { LineChart, lineDataItem } from 'react-native-gifted-charts';
-import { mockNetValues } from '../model/mock';
-import { Button, Center, HStack, Text } from 'native-base';
-import { useState } from 'react';
-import { NetValue } from '../model/NetValue';
-import { Dimensions } from 'react-native';
+import { Button, Center, Container, HStack, Text } from 'native-base';
+import React, { useMemo, useState } from 'react';
+import { Dimensions, View } from 'react-native';
 import { DateTime } from 'luxon';
-
+import { LineChart, ruleTypes } from 'react-native-gifted-charts';
+import { netValueData } from '../model/mock';
 export function LineGraphComponent() {
-    const timeFrames = ['1D', '1W', '1M', '3M', '1Y', '5Y'];
-
     const [selectedTimeFrame, setSelectedTimeFrame] = useState('1Y');
     const screenWidth = Dimensions.get('window').width;
-    // filter data based on time frame
-    const filterData = (timeFrame: string, values: NetValue[]) => {
-        console.log('before filter', values);
-        const endDate = DateTime.now();
-        let startDate = endDate;
-        switch (timeFrame) {
-            case '1D':
-                startDate = endDate.minus({ days: 1 });
-                break;
+    const graphData = useMemo(() => {
+        switch (selectedTimeFrame) {
+            // case '1D':
+            //     return netValueData.today.data;
             case '1W':
-                startDate = endDate.minus({ weeks: 1 });
-                break;
+                return netValueData.week.data;
             case '1M':
-                startDate = endDate.minus({ months: 1 });
-                break;
-            case '3M':
-                startDate = endDate.minus({ months: 3 });
-                break;
+                return netValueData.month.data;
             case '1Y':
-                startDate = endDate.minus({ years: 1 });
-                break;
-            case '5Y':
-                startDate = endDate.minus({ years: 5 });
-                break;
+                return netValueData.year.data;
+            default:
+                return netValueData.today.data;
         }
-        const filteredData = values
-            .filter(
-                (value) =>
-                    value.date.toMillis() >= startDate.toMillis() &&
-                    value.date.toMillis() <= endDate.toMillis(),
-            )
-            .map((value) => ({
-                value: value.value,
-                // label: value.date.toFormat('yyyy-MM-dd'),
-            }));
-        console.log(filteredData);
+    }, [selectedTimeFrame]);
 
-        return filteredData.length > 0
-            ? filteredData
-            : [{ value: 0, label: 'No data' }];
-    };
+    const graphTime = useMemo(() => {
+        switch (selectedTimeFrame) {
+            case '1D':
+                return netValueData.today.time;
+            case '1W':
+                return netValueData.week.time;
+            case '1M':
+                return netValueData.month.time;
+            case '1Y':
+                return netValueData.year.time;
+            default:
+                return netValueData.today.time;
+        }
+    }, [[selectedTimeFrame]]);
 
-    const data: lineDataItem[] = filterData(selectedTimeFrame, mockNetValues);
-    console.log('mockNetValues', mockNetValues);
-    console.log('today', new Date());
-    console.log('data 2023 1 1', new Date(2023, 0, 1));
+    console.log(graphData);
+
     return (
-        <Center w="full">
-            <Text fontSize="xl" fontWeight="bold" my={2}>
-                ${data[data.length - 1]?.value.toFixed(2)}
-            </Text>
+        <Center
+        // w="full"
+        >
             <LineChart
-                data={data}
+                areaChart
+                endFillColor={'#eef2ff'}
+                startFillColor={'#a5b4fc'}
+                startOpacity={0.8}
+                endOpacity={0.3}
+                data={graphData}
+                interpolateMissingValues
                 curved
-                curveType={1}
-                curvature={1}
+                curveType={0}
+                color={'#6366f1'}
                 hideDataPoints
                 hideYAxisText
-                thickness={2}
-                color="#6366f1"
-                yAxisThickness={0}
+                hideRules
                 xAxisThickness={0}
-                isAnimated
-                width={screenWidth}
-                height={200}
+                yAxisThickness={0}
+                adjustToWidth
+                disableScroll
+                onPress={(item) => console.log('item onPress: ', item)}
+                pointerConfig={{
+                    pointerStripHeight: 200,
+                    pointerStripColor: '#c7d2fe',
+                    pointerStripWidth: 2,
+                    pointerColor: '#c7d2fe',
+                    pointerLabelWidth: 110,
+                    pointerLabelHeight: 30,
+                    activatePointersOnLongPress: true,
+                    autoAdjustPointerLabelPosition: true,
+                    pointerLabelComponent: (items) => {
+                        console.log(items);
+                        return (
+                            <Container
+                                justifyContent={'center'}
+                                alignItems={'center'}
+                                justifyItems={'center'}
+                            >
+                                <Text color={'indigo.600'}>
+                                    {items[0].date}
+                                </Text>
+                            </Container>
+                        );
+                    },
+                }}
             />
             <HStack space={4}>
-                {timeFrames.map((timeFrame) => (
+                {['1W', '1M', '1Y'].map((timeFrame) => (
                     <Button
                         size="sm"
                         colorScheme="indigo"

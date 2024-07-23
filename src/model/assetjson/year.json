@@ -1,0 +1,818 @@
+[
+    {
+        "name": "Asset A",
+        "value": 2050,
+        "assetType": "Cash",
+        "time": "2024-07-18T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1220,
+        "assetType": "Investment",
+        "time": "2024-07-18T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1080,
+        "assetType": "Crypto",
+        "time": "2024-07-18T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3200,
+        "assetType": "Savings",
+        "time": "2024-07-18T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 2025,
+        "assetType": "Cash",
+        "time": "2024-07-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1235,
+        "assetType": "Investment",
+        "time": "2024-07-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1095,
+        "assetType": "Crypto",
+        "time": "2024-07-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3150,
+        "assetType": "Savings",
+        "time": "2024-07-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 2000,
+        "assetType": "Cash",
+        "time": "2024-07-16T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1240,
+        "assetType": "Investment",
+        "time": "2024-07-16T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1110,
+        "assetType": "Crypto",
+        "time": "2024-07-16T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3100,
+        "assetType": "Savings",
+        "time": "2024-07-16T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1980,
+        "assetType": "Cash",
+        "time": "2024-07-15T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1210,
+        "assetType": "Investment",
+        "time": "2024-07-15T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1105,
+        "assetType": "Crypto",
+        "time": "2024-07-15T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3120,
+        "assetType": "Savings",
+        "time": "2024-07-15T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1975,
+        "assetType": "Cash",
+        "time": "2024-07-14T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1205,
+        "assetType": "Investment",
+        "time": "2024-07-14T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1090,
+        "assetType": "Crypto",
+        "time": "2024-07-14T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3110,
+        "assetType": "Savings",
+        "time": "2024-07-14T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1960,
+        "assetType": "Cash",
+        "time": "2024-07-13T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1220,
+        "assetType": "Investment",
+        "time": "2024-07-13T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-07-13T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3130,
+        "assetType": "Savings",
+        "time": "2024-07-13T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 2000,
+        "assetType": "Cash",
+        "time": "2024-07-12T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1230,
+        "assetType": "Investment",
+        "time": "2024-07-12T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-07-12T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3100,
+        "assetType": "Savings",
+        "time": "2024-07-12T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 2030,
+        "assetType": "Cash",
+        "time": "2024-07-11T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1215,
+        "assetType": "Investment",
+        "time": "2024-07-11T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1085,
+        "assetType": "Crypto",
+        "time": "2024-07-11T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3150,
+        "assetType": "Savings",
+        "time": "2024-07-11T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 2020,
+        "assetType": "Cash",
+        "time": "2024-07-10T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1200,
+        "assetType": "Investment",
+        "time": "2024-07-10T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1095,
+        "assetType": "Crypto",
+        "time": "2024-07-10T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3160,
+        "assetType": "Savings",
+        "time": "2024-07-10T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1980,
+        "assetType": "Cash",
+        "time": "2024-07-09T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1195,
+        "assetType": "Investment",
+        "time": "2024-07-09T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-07-09T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3170,
+        "assetType": "Savings",
+        "time": "2024-07-09T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1970,
+        "assetType": "Cash",
+        "time": "2024-07-08T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1190,
+        "assetType": "Investment",
+        "time": "2024-07-08T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1090,
+        "assetType": "Crypto",
+        "time": "2024-07-08T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3180,
+        "assetType": "Savings",
+        "time": "2024-07-08T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1950,
+        "assetType": "Cash",
+        "time": "2024-07-07T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1200,
+        "assetType": "Investment",
+        "time": "2024-07-07T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-07-07T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3190,
+        "assetType": "Savings",
+        "time": "2024-07-07T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1920,
+        "assetType": "Cash",
+        "time": "2024-07-06T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1220,
+        "assetType": "Investment",
+        "time": "2024-07-06T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1110,
+        "assetType": "Crypto",
+        "time": "2024-07-06T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3200,
+        "assetType": "Savings",
+        "time": "2024-07-06T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1910,
+        "assetType": "Cash",
+        "time": "2024-07-05T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1210,
+        "assetType": "Investment",
+        "time": "2024-07-05T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1105,
+        "assetType": "Crypto",
+        "time": "2024-07-05T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3220,
+        "assetType": "Savings",
+        "time": "2024-07-05T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1890,
+        "assetType": "Cash",
+        "time": "2024-07-04T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1205,
+        "assetType": "Investment",
+        "time": "2024-07-04T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1090,
+        "assetType": "Crypto",
+        "time": "2024-07-04T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3250,
+        "assetType": "Savings",
+        "time": "2024-07-04T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1880,
+        "assetType": "Cash",
+        "time": "2024-07-03T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1220,
+        "assetType": "Investment",
+        "time": "2024-07-03T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1110,
+        "assetType": "Crypto",
+        "time": "2024-07-03T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3270,
+        "assetType": "Savings",
+        "time": "2024-07-03T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1850,
+        "assetType": "Cash",
+        "time": "2024-07-02T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1195,
+        "assetType": "Investment",
+        "time": "2024-07-02T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-07-02T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3300,
+        "assetType": "Savings",
+        "time": "2024-07-02T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1830,
+        "assetType": "Cash",
+        "time": "2024-07-01T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1200,
+        "assetType": "Investment",
+        "time": "2024-07-01T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1095,
+        "assetType": "Crypto",
+        "time": "2024-07-01T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3330,
+        "assetType": "Savings",
+        "time": "2024-07-01T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1800,
+        "assetType": "Cash",
+        "time": "2024-06-30T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1190,
+        "assetType": "Investment",
+        "time": "2024-06-30T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1085,
+        "assetType": "Crypto",
+        "time": "2024-06-30T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3350,
+        "assetType": "Savings",
+        "time": "2024-06-30T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1780,
+        "assetType": "Cash",
+        "time": "2024-06-29T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1180,
+        "assetType": "Investment",
+        "time": "2024-06-29T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-29T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3370,
+        "assetType": "Savings",
+        "time": "2024-06-29T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1750,
+        "assetType": "Cash",
+        "time": "2024-06-28T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1170,
+        "assetType": "Investment",
+        "time": "2024-06-28T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-28T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3400,
+        "assetType": "Savings",
+        "time": "2024-06-28T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1720,
+        "assetType": "Cash",
+        "time": "2024-06-27T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1160,
+        "assetType": "Investment",
+        "time": "2024-06-27T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1095,
+        "assetType": "Crypto",
+        "time": "2024-06-27T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3420,
+        "assetType": "Savings",
+        "time": "2024-06-27T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1700,
+        "assetType": "Cash",
+        "time": "2024-06-26T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 1150,
+        "assetType": "Investment",
+        "time": "2024-06-26T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-26T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 3450,
+        "assetType": "Savings",
+        "time": "2024-06-26T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 1670,
+        "assetType": "Cash",
+        "time": "2024-06-25T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 900,
+        "assetType": "Investment",
+        "time": "2024-06-25T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-25T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 2270,
+        "assetType": "Savings",
+        "time": "2024-06-25T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 890,
+        "assetType": "Cash",
+        "time": "2024-06-24T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 890,
+        "assetType": "Investment",
+        "time": "2024-06-24T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-24T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 1100,
+        "assetType": "Savings",
+        "time": "2024-06-24T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 890,
+        "assetType": "Cash",
+        "time": "2024-06-23T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 890,
+        "assetType": "Investment",
+        "time": "2024-06-23T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-23T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 1100,
+        "assetType": "Savings",
+        "time": "2024-06-23T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 890,
+        "assetType": "Cash",
+        "time": "2024-06-22T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 890,
+        "assetType": "Investment",
+        "time": "2024-06-22T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-22T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 1100,
+        "assetType": "Savings",
+        "time": "2024-06-22T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 890,
+        "assetType": "Cash",
+        "time": "2024-06-21T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 890,
+        "assetType": "Investment",
+        "time": "2024-06-21T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-21T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 1300,
+        "assetType": "Savings",
+        "time": "2024-06-21T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 890,
+        "assetType": "Cash",
+        "time": "2024-06-20T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 890,
+        "assetType": "Investment",
+        "time": "2024-06-20T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-20T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 1100,
+        "assetType": "Savings",
+        "time": "2024-06-20T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 890,
+        "assetType": "Cash",
+        "time": "2024-06-19T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 890,
+        "assetType": "Investment",
+        "time": "2024-06-19T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-19T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 1100,
+        "assetType": "Savings",
+        "time": "2024-06-19T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 890,
+        "assetType": "Cash",
+        "time": "2024-06-18T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 890,
+        "assetType": "Investment",
+        "time": "2024-06-18T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-18T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 1100,
+        "assetType": "Savings",
+        "time": "2024-06-18T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 890,
+        "assetType": "Cash",
+        "time": "2024-06-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 500,
+        "assetType": "Investment",
+        "time": "2024-06-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 1100,
+        "assetType": "Crypto",
+        "time": "2024-06-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 420,
+        "assetType": "Savings",
+        "time": "2024-06-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 100,
+        "assetType": "Cash",
+        "time": "2024-06-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 20,
+        "assetType": "Investment",
+        "time": "2024-06-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 200,
+        "assetType": "Crypto",
+        "time": "2024-06-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 200,
+        "assetType": "Savings",
+        "time": "2024-06-17T00:00:00.000Z"
+    },
+    {
+        "name": "Asset A",
+        "value": 200,
+        "assetType": "Cash",
+        "time": "2023-07-11T00:00:00.000Z"
+    },
+    {
+        "name": "Asset B",
+        "value": 200,
+        "assetType": "Investment",
+        "time": "2023-07-11T00:00:00.000Z"
+    },
+    {
+        "name": "Asset C",
+        "value": 200,
+        "assetType": "Crypto",
+        "time": "2023-07-11T00:00:00.000Z"
+    },
+    {
+        "name": "Asset D",
+        "value": 200,
+        "assetType": "Savings",
+        "time": "2023-07-11T00:00:00.000Z"
+    }
+]
