@@ -1,4 +1,4 @@
-import { Asset } from '../model/Asset';
+import { Asset } from '../../model/Asset';
 import { HStack, VStack, Text, Center } from 'native-base';
 
 export function AssetComponent(asset: Asset) {
@@ -34,7 +34,7 @@ interface AssetsComponentProps {
 
 export default function AssetsComponent({ assets }: AssetsComponentProps) {
     return (
-        <Center w="full" paddingX={5}>
+        <Center w="full" paddingX={5} background={'white'}>
             <VStack space={2} justifyContent={'center'} paddingY={10}>
                 {assets.map((asset) => AssetComponent(asset))}
             </VStack>

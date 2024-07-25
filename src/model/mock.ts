@@ -1,7 +1,7 @@
 import { DateTime } from 'luxon';
 import { Asset } from './Asset';
 import { lineDataItem } from 'react-native-gifted-charts';
-import { DataPointLabelComponent } from '../component/DataPointLabelComponent';
+import { DataPointLabelComponent } from '../component/overview/DataPointLabelComponent';
 
 const todayNetValue = require('./netvaluejson/today.json');
 const weekNetValue = require('./netvaluejson/week.json');

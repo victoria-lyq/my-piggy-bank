@@ -12,7 +12,7 @@ export function DataPointLabelComponent(props: { label: string }) {
 
 function DataPointLabel(props: { label: string }) {
     return (
-        <Container width={5} height={5} bg="indigo.100">
+        <Container width={5} height={5} bg="indigo.400">
             <Text>{props.label}</Text>
         </Container>
     );

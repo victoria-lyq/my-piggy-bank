@@ -1,22 +1,21 @@
 import AssetsComponent from './AssetsComponent';
-import { mockAssets } from '../model/mock';
-import { ScrollView } from 'native-base';
+import { mockAssets } from '../../model/mock';
+import { ScrollView, View } from 'native-base';
 import { HeaderComponent } from './HeaderComponent';
 import { LineGraphComponent } from './LineGraphComponent';
 import { SafeAreaView } from 'react-native';
 import { Fragment } from 'react';
+import { RefreshComponent } from '../RefreshComponent';
 
-export function HomePage() {
+export function AccountPage() {
     return (
         <Fragment>
-            <SafeAreaView style={{ flex: 0, backgroundColor: '#c7d2fe' }} />
-            {/* <SafeAreaView style={{ flex: 1 }}> */}
             <HeaderComponent />
             <ScrollView height={'full'}>
+                <RefreshComponent />
                 <LineGraphComponent />
                 <AssetsComponent assets={mockAssets} />
             </ScrollView>
-            {/* </SafeAreaView> */}
         </Fragment>
     );
 }
