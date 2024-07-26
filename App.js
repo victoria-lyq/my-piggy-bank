@@ -5,15 +5,16 @@ import React, { useState, Fragment } from 'react';
 import { SafeAreaView } from 'react-native';
 import { TransactionsPage } from './src/component/transactions/TransactionsPage';
 export default function App() {
-    const [selectedPage, setSelectedPage] = useState(1);
-    return (
-        <NativeBaseProvider>
-            <Fragment>
-                <SafeAreaView style={{ flex: 0, backgroundColor: '#818cf8' }} />
-            </Fragment>
-            {selectedPage === 0 && <AccountPage />}
-            {selectedPage === 1 && <TransactionsPage />}
-            <Footer selected={selectedPage} setSelected={setSelectedPage} />
-        </NativeBaseProvider>
-    );
+  const [selectedPage, setSelectedPage] = useState(0);
+
+  return (
+    <NativeBaseProvider>
+      <Fragment>
+        <SafeAreaView style={{ flex: 0, backgroundColor: '#818cf8' }} />
+      </Fragment>
+      {selectedPage === 0 && <AccountPage />}
+      {selectedPage === 1 && <TransactionsPage />}
+      <Footer selected={selectedPage} setSelected={setSelectedPage} />
+    </NativeBaseProvider>
+  );
 }

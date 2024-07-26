@@ -1,12 +1,25 @@
-import { Account } from  "../model/Account";
+import { Account } from '../model/Account';
 
-type TransactionStatus = "Pending" | "Complete"
-type TransactionType = "Charge" | "Deposit"
+type TransactionStatus = 'Pending' | 'Complete';
+type TransactionType = 'Charge' | 'Deposit';
 
 export interface Transaction {
-    account: Account,
-    amount: number,
-    status: TransactionStatus,
-    type:TransactionType, 
-    transactionTime: Date,
+  date: Date;
+  merchant: String;
+  category: String;
+  account: Account;
+  amount: number;
+  originalStatement: String;
+  notes: String;
+  tags: String;
+  status?: TransactionStatus;
+  type?: TransactionType;
+}
+
+
+export interface TransactionListItem {
+    transactionTime: String;
+    merchant: String;
+    amount: number;
+    account: 
 }
