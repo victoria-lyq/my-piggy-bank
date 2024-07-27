@@ -1,7 +1,6 @@
 import { DateTime } from 'luxon';
 import { Asset } from './Asset';
 import { lineDataItem } from 'react-native-gifted-charts';
-import { Transaction } from './Transaction';
 
 const todayNetValue = require('../data/netvaluejson/today.json');
 const weekNetValue = require('../data/netvaluejson/week.json');
@@ -95,12 +94,12 @@ export const mockAssets: Asset[] = [
 
 export const transactionsJson = require('../data/transactions.json').slice(
   0,
-  10,
+  20,
 );
 
 export const getTransactions = (jsonData) => {
   return jsonData.map((item: any) => ({
-    date: new Date(item.Date),
+    date: DateTime.fromISO(item.Date),
     merchant: item.Merchant,
     category: item.Category,
     account: item.Account,

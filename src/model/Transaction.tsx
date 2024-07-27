@@ -1,10 +1,10 @@
 import { Account } from '../model/Account';
-
+import { DateTime } from 'luxon';
 type TransactionStatus = 'Pending' | 'Complete';
 type TransactionType = 'Charge' | 'Deposit';
 
 export interface Transaction {
-  date: Date;
+  date: DateTime;
   merchant: String;
   category: String;
   account: Account;
