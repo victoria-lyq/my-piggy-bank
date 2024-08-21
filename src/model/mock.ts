@@ -102,7 +102,12 @@ export const getTransactions = (jsonData) => {
     date: DateTime.fromISO(item.Date),
     merchant: item.Merchant,
     category: item.Category,
-    account: item.Account,
+    // map item account name to Account object
+    account: {
+      name: item.Account,
+      bank: item.Bank,
+      value: parseFloat(item.Amount),
+    },
     amount: parseFloat(item.Amount),
     originalStatement: item.OriginalStatement,
     notes: item.Notes,

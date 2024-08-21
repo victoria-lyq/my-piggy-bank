@@ -49,7 +49,7 @@ const TransactionsPage: React.FC = ({ navigation }: TransactionProps) => {
           <Pressable
             onPress={() => {
               // launch transaction detail page for item
-              console.log(item);
+              console.log('item', item);
               navigation.navigate('TransactionDetail', { item: item });
             }}
           >
