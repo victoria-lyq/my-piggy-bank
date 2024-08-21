@@ -16,10 +16,9 @@ export interface Transaction {
   type?: TransactionType;
 }
 
-
 export interface TransactionListItem {
-    transactionTime: String;
-    merchant: String;
-    amount: number;
-    account: 
+  transactionTime: String;
+  merchant: String;
+  amount: number;
+  account: Account;
 }

@@ -2,10 +2,10 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { getTransactions, transactionsJson } from '../../model/mock';
 import {
   Box,
-  Center,
   FlatList,
   HStack,
   Icon,
+  Pressable,
   Text,
   View,
   VStack,
@@ -30,7 +30,11 @@ export function formatTransactionDate(date: DateTime) {
   }
 }
 
-export function TransactionsPage() {
+interface TransactionProps {
+  navigation: any;
+}
+
+const TransactionsPage: React.FC = ({ navigation }: TransactionProps) => {
   const mockTransactions = getTransactions(transactionsJson);
   console.log(mockTransactions);
   const windowWidth = Dimensions.get('window').width;
@@ -41,51 +45,61 @@ export function TransactionsPage() {
         scrollEnabled={true}
         data={mockTransactions}
         ListFooterComponent={<View style={{ height: 180 }} />}
-        renderItem={(info: ListRenderItemInfo<Transaction>) => (
-          <HStack
-            justifyContent={'space-between'}
-            alignItems={'center'}
-            justifyItems={'center'}
-            p={3}
-            borderBottomWidth={1}
-            borderColor={'gray.200'}
-            width={windowWidth * 0.95}
-            alignSelf={'center'}
+        renderItem={({ item }: ListRenderItemInfo<Transaction>) => (
+          <Pressable
+            onPress={() => {
+              // launch transaction detail page for item
+              console.log(item);
+              navigation.navigate('TransactionDetail', { item: item });
+            }}
           >
-            <VStack space={2}>
-              <Text
-                fontWeight={'bold'}
-                fontSize={'md'}
-                numberOfLines={1}
-                ellipsizeMode={'tail'}
-                width={windowWidth * 0.6} // Adjust this width as needed
-              >
-                {info.item.merchant}
-              </Text>
-              <Text fontSize={'xs'} color={'gray.500'}>
-                {formatTransactionDate(info.item.date as DateTime)}
-              </Text>
-            </VStack>
-            <HStack alignSelf="center" alignItems="center" space={3}>
-              <Text
-                color={info.item.type === 'Charge' ? 'rose.600' : 'lime.600'}
-                fontWeight="semibold"
-                fontSize="md"
-              >
-                {info.item.type === 'Charge'
-                  ? '-' + '$' + Math.abs(info.item.amount).toFixed(2)
-                  : '+' + '$' + info.item.amount.toFixed(2)}
-              </Text>
-              <Icon
-                as={MaterialIcons}
-                name="keyboard-arrow-right"
-                size="md"
-                color={'gray.300'}
-              />
+            <HStack
+              justifyContent={'space-between'}
+              alignItems={'center'}
+              justifyItems={'center'}
+              p={3}
+              borderBottomWidth={1}
+              borderColor={'gray.200'}
+              width={windowWidth * 0.95}
+              alignSelf={'center'}
+            >
+              <VStack space={2}>
+                <Text
+                  fontWeight={'bold'}
+                  fontSize={'md'}
+                  numberOfLines={1}
+                  ellipsizeMode={'tail'}
+                  width={windowWidth * 0.6} // Adjust this width as needed
+                >
+                  {item.merchant}
+                </Text>
+                <Text fontSize={'xs'} color={'gray.500'}>
+                  {formatTransactionDate(item.date as DateTime)}
+                </Text>
+              </VStack>
+              <HStack alignSelf="center" alignItems="center" space={3}>
+                <Text
+                  color={item.type === 'Charge' ? 'rose.600' : 'lime.600'}
+                  fontWeight="semibold"
+                  fontSize="md"
+                >
+                  {item.type === 'Charge'
+                    ? '-' + '$' + Math.abs(item.amount).toFixed(2)
+                    : '+' + '$' + item.amount.toFixed(2)}
+                </Text>
+                <Icon
+                  as={MaterialIcons}
+                  name="keyboard-arrow-right"
+                  size="md"
+                  color={'gray.300'}
+                />
+              </HStack>
             </HStack>
-          </HStack>
+          </Pressable>
         )}
       ></FlatList>
     </Box>
   );
-}
+};
+
+export default TransactionsPage;
