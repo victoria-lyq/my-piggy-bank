@@ -6,7 +6,7 @@ import {
   Text,
   Divider,
   Icon,
-  Pressable,
+  Modal,
 } from 'native-base';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Transaction } from '../../model/Transaction';
@@ -15,6 +15,8 @@ import {
   RouteProp,
   ParamListBase,
 } from '@react-navigation/native';
+import { useState } from 'react';
+import ReceiptInfo from './ReceiptInfo';
 
 interface TransactionDetailPageProps {
   navigation: NavigationProp<ParamListBase>;
@@ -30,6 +32,13 @@ const TransactionDetail: React.FC<TransactionDetailPageProps> = ({
   route,
 }) => {
   const { item: transaction } = route.params;
+  const [showModal, setShowModal] = useState(false);
+
+  const displayTotal =
+    transaction.amount < 0
+      ? `$${Math.abs(transaction.amount).toFixed(2)}`
+      : `+$${transaction.amount.toFixed(2)}`;
+
   if (!transaction) {
     return (
       <Box
@@ -71,9 +80,7 @@ const TransactionDetail: React.FC<TransactionDetailPageProps> = ({
       {/* Amount and recipient details */}
       <VStack space={2} alignItems="center" mt={3}>
         <Text fontSize="4xl" fontWeight="bold">
-          {transaction.amount < 0
-            ? `$${Math.abs(transaction.amount).toFixed(2)}`
-            : `+$${transaction.amount.toFixed(2)}`}
+          {displayTotal}
         </Text>
         <Text fontSize="md" color={'gray.500'}>
           {transaction.merchant}
@@ -95,7 +102,7 @@ const TransactionDetail: React.FC<TransactionDetailPageProps> = ({
           <Divider mt={2} />
           <HStack justifyContent="space-between">
             <Text fontWeight="bold">Total</Text>
-            <Text fontWeight="bold">${transaction.amount.toFixed(2)}</Text>
+            <Text fontWeight="bold">{displayTotal}</Text>
           </HStack>
         </VStack>
       </Box>
@@ -106,11 +113,14 @@ const TransactionDetail: React.FC<TransactionDetailPageProps> = ({
           colorScheme={'indigo'}
           variant="outline"
           onPress={() => {
-            /* logic for sending again */
+            setShowModal(true);
           }}
         >
           Link Receipt
         </Button>
+        <Modal isOpen={showModal} onClose={() => setShowModal(false)} size="lg">
+          <ReceiptInfo currentTotal={transaction.amount} />
+        </Modal>
       </VStack>
 
       {/* Transaction ID */}
