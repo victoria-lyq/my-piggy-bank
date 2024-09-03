@@ -6,7 +6,7 @@ import { LineGraphComponent } from './LineGraphComponent';
 import { Fragment } from 'react';
 import { RefreshComponent } from '../RefreshComponent';
 
-const AccountPage: React.FC = () => {
+const OverviewPage: React.FC = () => {
   return (
     <Fragment>
       <HeaderComponent />
@@ -19,4 +19,4 @@ const AccountPage: React.FC = () => {
   );
 };
 
-export default AccountPage;
+export default OverviewPage;

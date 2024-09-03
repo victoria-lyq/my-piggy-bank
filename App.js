@@ -1,10 +1,11 @@
 import { NativeBaseProvider, extendTheme } from 'native-base';
-import AccountPage from './src/component/overview/AccountPage';
 import { Footer } from './src/component/Footer';
 import React, { useState, Fragment } from 'react';
 import { SafeAreaView } from 'react-native';
 import TransactionsPage from './src/component/transactions/TransactionsPage';
 import TransactionDetail from './src/component/transactions/TransactionDetail';
+import AccountPage from './src/component/account/AccountPage';
+import OverviewPage from './src/component/overview/OverviewPage';
 import {
   NavigationContainer,
   useNavigationContainerRef,
@@ -77,15 +78,16 @@ export default function App() {
         }
       >
         <Stack.Navigator
-          initialRouteName="AccountPage"
+          initialRouteName="OverviewPage"
           screenOptions={{ headerShown: false, animationEnabled: false }}
         >
-          <Stack.Screen name="AccountPage" component={AccountPage} />
+          <Stack.Screen name="OverviewPage" component={OverviewPage} />
           <Stack.Screen name="TransactionsPage" component={TransactionsPage} />
           <Stack.Screen
             name="TransactionDetail"
             component={TransactionDetail}
           />
+          <Stack.Screen name="AccountPage" component={AccountPage} />
         </Stack.Navigator>
         <Footer currentRoute={currentRoute} navigate={navigate} />
       </NavigationContainer>
