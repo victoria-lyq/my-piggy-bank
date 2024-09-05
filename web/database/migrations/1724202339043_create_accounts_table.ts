@@ -6,12 +6,13 @@ export default class extends BaseSchema {
   async up() {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
-      table.index('account_id') // use persistent_account_id for chase accounts
+      table.string('account_id').unique() // use persistent_account_id for chase accounts
+      table.string('persistent_account_id')
       table.string('mask')
       table.string('name')
       table.string('official_name')
-      table.enum('holder_category', ["personal", "business", "unrecognized"])
-      table.enum('type', ["credit", "depository", "loan", "other"])
+      table.enum('holder_category', ['personal', 'business', 'unrecognized'])
+      table.enum('type', ['credit', 'depository', 'loan', 'other'])
       table.enum('subtype', [
         '401a',
         '401k',

@@ -6,7 +6,8 @@ export default class extends BaseSchema {
   async up() {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
-      table.foreign('account_id')
+      table.integer('account_id')
+      table.foreign('account_id').references('accounts.id')
       table.double('available')
       table.double('current')
       table.double('limit')
